@@ -1,0 +1,52 @@
+/* Inventory.css */
+
+.inventory-container {
+    padding: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+  }
+  
+  .inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .inventory-table th,
+  .inventory-table td {
+    border: 1px solid #ededed;
+    padding: 10px 20px;
+  }
+
+  th{
+    font-weight: 600;
+    background-color: #ededed;
+    text-align: start;
+    font-size: 0.8rem;
+  }
+
+  #product-name{
+    font-weight: 500;
+  }
+
+  #product-desc{
+    color: #8c8c8c;
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+
+  #detail{
+    text-align: center;
+  }
+
+  #detail a{
+    color: #ffd573;
+  }
+
+
+
+  

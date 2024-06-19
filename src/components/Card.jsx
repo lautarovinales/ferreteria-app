@@ -1,11 +1,14 @@
 import React from 'react';
-import Style from './styles/Card.css';
+import './styles/Card.css';
 
-function Card() {
+function Card({ nombre, marca, descripcion, stock, ventas }) {
   return (
-    <div>
-      <div id='Card'>
-        
+    <div id="card">
+      <img src="./images/martillo.png" alt={nombre} />
+      <div id="card-data">
+        <h3 id="card-title">{nombre}</h3>
+        <p id="card-brand">{marca}</p>
+        <p id="card-desc">{descripcion}</p>
       </div>
     </div>
   );
