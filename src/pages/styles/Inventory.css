@@ -33,7 +33,7 @@
     font-weight: 500;
   }
 
-  #product-desc{
+  #product-desc, #product-code{
     color: #8c8c8c;
     font-weight: 300;
     font-size: 0.8rem;
@@ -45,6 +45,10 @@
 
   #detail a{
     color: #ffd573;
+  }
+
+  main{
+    min-height: 100vh;
   }
 
 

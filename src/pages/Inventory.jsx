@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 import './styles/Inventory.css'; // Importar el archivo CSS
+import { Link } from 'react-router-dom'; // Importar Link para la navegación
 
 function Inventory() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -49,8 +51,6 @@ function Inventory() {
                 <th>MARCA</th>
                 <th>CÓDIGO</th>
                 <th>DESCRIPCIÓN</th>
-                <th>STOCK</th>
-                <th>VENTAS</th>
                 <th>VER MÁS</th>
               </tr>
             </thead>
@@ -59,17 +59,20 @@ function Inventory() {
                 <tr key={index}>
                   <td id='product-name'>{item.nombre}</td>
                   <td>{item.marca}</td>
-                  <td>{item.codigo}</td>
+                  <td id='product-code'>{item.codigo}</td>
                   <td id='product-desc'>{item.descripcion}</td>
-                  <td>{item.stock}</td>
-                  <td>{item.ventas}</td>
-                  <td id='detail'><a href="http://"><i class="fa-regular fa-eye"></i></a></td>
+                  <td id='detail'>
+                    <Link to={`/product/${item.codigo}`}>
+                      <i className="fa-regular fa-eye"></i>
+                    </Link>
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
       </main>
+      <Footer/>
     </div>
   );
 }

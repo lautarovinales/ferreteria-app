@@ -8,7 +8,7 @@ function Footer() {
         <div id='footer-flex'>
           <div id='footer-top'>
             <div id="img-p">
-              <img src="./images/logo.png" alt="" />
+              <img src="https://ingeniographic.wordpress.com/wp-content/uploads/2014/04/logo-ferreteria-sanchez.gif" alt="" />
               <p>Ferretería Sanchez, Orden y Calidad en Cada Herramienta.</p>
             </div>
             <div id='footer-items'>
